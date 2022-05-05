@@ -17,13 +17,6 @@ function Address({ data, schema, qLength }) {
   return (
     <>
     <Profiler id="Navigation" onRender={onRenderCallback}>
-      <p>
-        <TextHighlight
-          text={data.sentence}
-          hIndex={schema?.sentence}
-          hLength={qLength}
-        />
-      </p>
       <div>
         <small className="text-secondary">
           <strong>lat</strong>:{" "}
